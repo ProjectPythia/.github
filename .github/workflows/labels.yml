@@ -1,0 +1,27 @@
+---
+name: Sync labels in the declarative way
+on:
+  push:
+    branches:
+      - main
+    # paths:
+    #   - .github/labels.yml
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    if: github.repository == 'ProjectPythia/.github'
+    strategy:
+      matrix:
+        repository:
+          - ProjectPythia/actions
+          - ProjectPythia/projectpythia.github.io
+          - ProjectPythia/pythia-foundations
+          - ProjectPythia/sphinx-pythia-theme
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: .github/labels.yml
+          repository: ${{ matrix.repository }}
+          token: ${{ secrets.GH_PERSONAL_TOKEN }}
