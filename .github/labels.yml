@@ -9,11 +9,11 @@
 
 - name: infrastructure
   color: 006b75
-  description: ''
+  description: Infrastructure related issue
 
 - name: content
   color: 0052cc
-  description: ''
+  description: Content related issue
 
 # Skill level
 - name: good first issue
