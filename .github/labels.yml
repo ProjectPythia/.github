@@ -1,0 +1,64 @@
+# Type
+- name: community
+  color: d93f0b
+  description: ''
+
+- name: discussion
+  color: bebaf4
+  description: ''
+
+- name: infrastructure
+  color: 006b75
+  description: ''
+
+- name: content
+  color: 0052cc
+  description: ''
+
+# Skill level
+- name: good first issue
+  color: '159818'
+  description: Clearly described and easy to accomplish. Good for beginners to the project.
+
+- name: good second issue
+  color: 5319e7
+  description: Clearly described, educational, but less trivial than "good first issue".
+
+# Status
+- name: needs info
+  color: f4e49a
+  description: ''
+
+- name: blocked
+  color: b60205
+  description: Awaiting the output of some other work
+
+- name: stale
+  color: D3D3D3
+  description: ''
+
+- name: needs triage
+  color: 7b9ad8
+  description: 'This can be kept if the triager is unsure which next steps to take'
+
+- name: ready for review
+  color: 0e8a16
+  description: ''
+
+- name: ready to merge
+  color: c9e7c7
+  description: ''
+
+# Priority
+
+- name: high priority
+  color: fbca04
+  description: ''
+
+- name: medium priority
+  color: fef2c0
+  description: ''
+
+- name: low priority
+  color: c2e0c6
+  description: ''
