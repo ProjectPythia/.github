@@ -2,7 +2,7 @@
 name: Bug Report
 about: Report a bug
 labels:
-  - type/bug
+  - bug
   - needs-triage
 ---
 
