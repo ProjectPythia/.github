@@ -1,9 +1,7 @@
 ---
 name: Bug Report
 about: Report a bug
-labels:
-  - bug
-  - needs-triage
+labels: 'bug, needs-triage'
 ---
 
 <!-- Please include a self-contained copy-pastable example that generates the issue if possible.
