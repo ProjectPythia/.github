@@ -19,6 +19,7 @@ jobs:
           - ProjectPythia/actions
           - ProjectPythia/projectpythia.github.io
           - ProjectPythia/pythia-foundations
+          - ProjectPythia/pythia-datasets
           - ProjectPythia/sphinx-pythia-theme
     steps:
       - uses: actions/checkout@v2
