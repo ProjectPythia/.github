@@ -27,6 +27,11 @@
   color: B60205
   description: Issues that present a reasonable conviction there is a reproducible bug.
 
+# Events
+- name: hackathon
+  color: a03f0b
+  description: Issue highlighted for active hackathon session
+
 # Skill level
 - name: good first issue
   color: '159818'
@@ -62,7 +67,6 @@
   description: ''
 
 # Priority
-
 - name: high priority
   color: fbca04
   description: High priority issue
