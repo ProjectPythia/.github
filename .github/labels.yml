@@ -27,6 +27,10 @@
   color: B60205
   description: Issues that present a reasonable conviction there is a reproducible bug.
 
+- name: external-links-gallery-submission
+  color: a89b97
+  description: Issue used for updating external links gallery
+
 # Events
 - name: hackathon
   color: a03f0b
