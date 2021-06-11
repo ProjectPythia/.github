@@ -7,11 +7,11 @@ labels: 'external-links-gallery-submission'
 
 <!-- Please fill out the template below. -->
 
-Checklist of required entries:
+Make sure the following items are specified :
 
-- [ ] `url` is specified
-- [ ] `title` is specified
-- [ ] `description` is specified
+- `url`
+- `title`
+- `description`
 
 **Note**:
 
@@ -32,6 +32,13 @@ authors:
     affiliation: ''
     affiliation_url: ''
     email: ''
+tags:
+  packages:
+    - unspecified
+  formats:
+    - unspecified
+  domains:
+    - unspecified
 ---
 
 ```
