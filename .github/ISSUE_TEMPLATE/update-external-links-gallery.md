@@ -13,10 +13,9 @@ Checklist of required entries:
 - [ ] `title` is specified
 - [ ] `description` is specified
 
-**Note**: 
+**Note**:
+
 - The thumbnail can be a url to a direct image link.
-
-
 
 ```yaml
 ---
