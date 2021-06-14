@@ -15,9 +15,6 @@ Make sure the following items are specified :
 - `authors` (please credit the creators of the resource in at least one method (`name`, `affiliation`, `affiliation_url`, or `email`)
 - `tag` (at least one tag is required, this helps users access the link by searching via the relevant `packages`, `formats`, or `domains`)
 
-**Note**:
-
-- The thumbnail can be a url to a direct image link.
 
 ```yaml
 ---
