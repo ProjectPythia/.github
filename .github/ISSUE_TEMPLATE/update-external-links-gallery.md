@@ -9,11 +9,11 @@ labels: 'external-links-gallery-submission'
 
 Make sure the following items are specified :
 
-- [ ] `url`
-- [ ] `title`
-- [ ] `description`
-- [ ] `authors` (please credit the creators of the resource in at least one method (`name`, `affiliation`, `affiliation_url`, or `email`)
-- [ ] `tag` (at least one tag is required, this helps users access the link by searching via the relevant `packages`, `formats`, or `domains`)
+- `url`
+- `title`
+- `description`
+- `authors` (please credit the creators of the resource in at least one method (`name`, `affiliation`, `affiliation_url`, or `email`)
+- `tag` (at least one tag is required, this helps users access the link by searching via the relevant `packages`, `formats`, or `domains`)
 
 **Note**:
 
@@ -38,7 +38,7 @@ tags:
   packages:
     - unspecified # List each Python package associated with this resource on a seperate line (the dash is only necessary for the first entry).
   formats:
-    - unspecified # List the formats this resource takes (e.g. book, course, documentation, gallery, tutorial, video).
+    - unspecified # List the formats this resource takes. Currently used format tags include: book, course, documentation, gallery, tutorial, and video (but you may submit an entirely new tag if these do not best suit the resource).
   domains:
     - unspecified # List the domains associated with this package so users may sort by areas of interest (e.g. remote sensing).
 ---
