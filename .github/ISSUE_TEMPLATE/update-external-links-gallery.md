@@ -5,7 +5,7 @@ title: ''
 labels: 'external-links-gallery-submission'
 ---
 
-<!-- Please fill out the template below by adding the necessary information in between the single quotes in each relevant or known field. -->
+<!-- Please fill out the template below by adding the necessary information in between the single quotes ('') in each relevant or known field (or replacing the "unspecified" tag in the 3 tags sections). -->
 
 Make sure the following items are specified :
 
@@ -22,8 +22,8 @@ url: '' # The URL link to the resource you are submitting.
 thumbnail: '' # The URL link to the thumbnail image associated with this resource.
 title: '' # The title of the resource.
 description: '' # A brief description of the resource.
-authors: 
-  - name: '' # The name of the first author. Mulitiple authors are supported, add each author separately.
+authors: # Mulitiple authors are supported, add each author separately.
+  - name: '' # The name of the first author.
     affiliation: '' # The affiliation of the authors / first author (more appropriate than name if a large team worked on the resource).
     affiliation_url: '' # The URL link to the affiliation website.
     email: '' # The author's email, if publically available.
@@ -31,7 +31,7 @@ authors:
     affiliation: ''
     affiliation_url: ''
     email: ''
-tags:
+tags: # Replace or delete the "unspecified" tag for each section with keywords associated with the resource. 
   packages:
     - unspecified # List each Python package associated with this resource on a separate line (the dash is only necessary for the first entry).
   formats:
