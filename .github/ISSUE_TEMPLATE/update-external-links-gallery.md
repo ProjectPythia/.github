@@ -5,7 +5,7 @@ title: ''
 labels: 'external-links-gallery-submission'
 ---
 
-<!-- Please fill out the template below by adding the necessary information in between the single quotes in each relevant or known field. -->
+<!-- Please fill out the template below by adding the necessary information in between the single quotes ('') in each relevant or known field (or replacing the "unspecified" tag in the 3 tags sections). -->
 
 Make sure the following items are specified :
 
@@ -31,7 +31,7 @@ authors: # Mulitiple authors are supported, add each author separately.
     affiliation: ''
     affiliation_url: ''
     email: ''
-tags: # Replace or delete the `unspecified` tag for each section with keywords associated with the resource. 
+tags: # Replace or delete the "unspecified" tag for each section with keywords associated with the resource. 
   packages:
     - unspecified # List each Python package associated with this resource on a separate line (the dash is only necessary for the first entry).
   formats:
