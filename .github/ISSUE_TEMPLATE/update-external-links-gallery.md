@@ -23,7 +23,7 @@ thumbnail: '' # The URL link to the thumbnail image associated with this resourc
 title: '' # The title of the resource.
 description: '' # A brief description of the resource.
 authors: 
-  - name: '' # The name of the first author. Mulitiple authors are supported, add each author seperately.
+  - name: '' # The name of the first author. Mulitiple authors are supported, add each author separately.
     affiliation: '' # The affiliation of the authors / first author (more appropriate than name if a large team worked on the resource).
     affiliation_url: '' # The URL link to the affiliation website.
     email: '' # The author's email, if publically available.
@@ -33,7 +33,7 @@ authors:
     email: ''
 tags:
   packages:
-    - unspecified # List each Python package associated with this resource on a seperate line (the dash is only necessary for the first entry).
+    - unspecified # List each Python package associated with this resource on a separate line (the dash is only necessary for the first entry).
   formats:
     - unspecified # List the formats this resource takes. Currently used format tags include: book, course, documentation, gallery, tutorial, and video (but you may submit an entirely new tag if these do not best suit the resource).
   domains:
