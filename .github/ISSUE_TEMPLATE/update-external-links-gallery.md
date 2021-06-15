@@ -31,9 +31,9 @@ authors: # Mulitiple authors are supported, add each author separately.
     affiliation: ''
     affiliation_url: ''
     email: ''
-tags: # Replace or delete the "unspecified" tag for each section with keywords associated with the resource. 
+tags: # Replace or delete the "unspecified" tag for each section with keywords associated with the resource. Multi-word tags should be entered with a space between the words (i.e. not joined with a `-`).
   packages:
-    - unspecified # List each Python package associated with this resource on a separate line (the dash is only necessary for the first entry).
+    - unspecified # List each Python package associated with this resource on a separate line (each entry on a new line, starting with a `-`).
   formats:
     - unspecified # List the formats this resource takes. Currently used format tags include: book, course, documentation, gallery, tutorial, and video (but you may submit an entirely new tag if these do not best suit the resource).
   domains:
