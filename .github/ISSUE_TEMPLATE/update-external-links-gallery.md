@@ -15,7 +15,6 @@ Make sure the following items are specified :
 - `authors` (please credit the creators of the resource in at least one method (`name`, `institution`, `institution_url`, or `email`)
 - `tag` (at least one tag is required, this helps users access the link by searching via the relevant `packages`, `formats`, or `domains`)
 
-
 ```yaml
 ---
 url: '' # The URL link to the resource you are submitting.
@@ -39,9 +38,8 @@ tags: # Replace or delete the "unspecified" tag for each section with keywords a
   domains:
     - unspecified # List the domains associated with this resource so users may sort by areas of interest (e.g. remote sensing).
   affiliation:
-    -  unspecified # List of the affiliated projects or organizations associated with this resource.
+    - unspecified # List of the affiliated projects or organizations associated with this resource.
 ---
-
 ```
 
 <!-- Feel free to add comments below this line -->
