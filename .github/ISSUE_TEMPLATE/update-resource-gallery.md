@@ -1,8 +1,8 @@
 ---
-name: Update external links gallery
-about: Update external links gallery
+name: Update resource gallery
+about: Update resource gallery
 title: ''
-labels: 'external-links-gallery-submission'
+labels: 'resource-gallery-submission'
 ---
 
 <!-- Please fill out the template below by adding the necessary information in between the single quotes ('') in each relevant or known field (or replacing the "unspecified" tag in the 3 tags sections). -->
