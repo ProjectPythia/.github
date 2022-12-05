@@ -42,6 +42,6 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
 
 1. Add your Cookbook to the Cookbook gallery!
    1. Navigate to the [Cookbooks Gallery](https://cookbooks.projectpythia.org/)
-   1. Click the "Submit a New Cookbook" button, which will redirect you to a [new cookbook PR template](https://github.com/ProjectPythia/projectpythiacookbooks.github.io/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook)
+   1. Click the "Submit a New Cookbook" button, which will redirect you to a [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook)
    1. Add the root name of your cookbook repository in the relevant field and any other information you'd like the team to know
    1. Your request will be reviewed, and you will be notified once your content has been accepted or if changes are requested
