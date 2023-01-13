@@ -39,7 +39,7 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
          1. Contact an owner of ProjectPythia to be added as an outside collaborator. Then transfer to ProjectPythia; or
          1. Type the username of an owner or member. They will then tranfer it to ProjectPythia and add you as an outside collaborator on that repo
    1. Replace the `repository_url` in the `sphinx/config/html_theme_options` of the `_config.yml` file to point to your cookbook's GitHub repository within the [ProjectPythia](https://github.com/ProjectPythia) organization
-   1. Make sure the workflow settings under Settings-->Actions-->General are set to allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
+   1. Make sure the workflow settings under Settings-->Actions-->General are set to allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"> (Please reach out if you are not able to access the Settings for your repository.)
 
    1. Open issues, PRs, and continue making edits as necessary
 
