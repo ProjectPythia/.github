@@ -22,6 +22,7 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
    1. Within `environment.yml`, change `name:` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes
    1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
    1. Activate your environment with `conda activate <env-name>`
+   1. Update the `.github/workflows/nightly-build.yaml` and `.github/workflows/publish-book.yaml` files to include the new name of the environment (ex. `cesm-cookbook-dev`)
 1. Add content
    1. After [creating a new git branch](https://foundations.projectpythia.org/foundations/github/git-branches.html), edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb` to add your content. Add folders to organize notebooks into sections if applicable
    1. Add the notebooks to `_toc.yml`. See [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for syntax
@@ -38,6 +39,8 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
          1. Contact an owner of ProjectPythia to be added as an outside collaborator. Then transfer to ProjectPythia; or
          1. Type the username of an owner or member. They will then tranfer it to ProjectPythia and add you as an outside collaborator on that repo
    1. Replace the `repository_url` in the `sphinx/config/html_theme_options` of the `_config.yml` file to point to your cookbook's GitHub repository within the [ProjectPythia](https://github.com/ProjectPythia) organization
+   1. Make sure the workflow settings under Settings-->Actions-->General are set to allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"> (Please reach out if you are not able to access the Settings for your repository by tagging @ProjectPythia/core)
+
    1. Open issues, PRs, and continue making edits as necessary
 
 1. Add your Cookbook to the Cookbook gallery!
