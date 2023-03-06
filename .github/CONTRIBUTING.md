@@ -3,13 +3,13 @@
 Project Pythia Cookbooks are collections of more advanced and domain-specific example
 workflows building on top of [Pythia Foundations](https://foundations.projectpythia.org/landing-page.html).
 They are [geoscience](https://en.wikipedia.org/wiki/Earth_science)-focused
-and should direct the reader towards the [Foundations material](https://foundations.projectpythia.org/landing-page.html) for any required
+and should direct the reader towards the Foundations material for any required
 background knowledge.
 
 The following is a step-by-step guide to getting your cookbook idea
-hosted on the [Project Pythia Cookbooks gallery](https://cookbooks.projectpythia.org).
+hosted on the [Project Pythia Cookbooks Gallery](https://cookbooks.projectpythia.org).
 
-Before you begin, ask yourself if the content you are developing for a cookbook would be better suited as an addition to an existing cookbook.
+Before you begin, ask yourself if the content you are developing for a cookbook would be better suited as an addition to an existing cookbook. The best place to discuss cookbook ideas is the [Project Pythia category of the Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/60).
 
 1. Use the template
    1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
@@ -32,18 +32,14 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
    1. Replace the `title`, `author`, `description`, `thumbnail`, and the domain and package `tags` fields in the `_config.yml` file with values relevant to your cookbook. These values will affect how information about your cookbook is displayed in the gallery.
    1. Commit your changes with git, and [open a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html) on your cookbook repo. When you open a PR there, the github-actions bot will comment a link to a preview of your cookbook
 1. Transfer cookbook to the [ProjectPythia](https://github.com/ProjectPythia) organization
-
-   1. Navigate to the settings of your repo, scroll down to the Danger Zone, and click "Transfer"
-      1. For ProjectPythia owners or members: type "ProjectPythia", confirm, and transfer
-      1. For outside contributors:
-         1. Contact an owner of ProjectPythia to be added as an outside collaborator. Then transfer to ProjectPythia; or
-         1. Type the username of an owner or member. They will then tranfer it to ProjectPythia and add you as an outside collaborator on that repo
-   1. Replace the `repository_url` in the `sphinx/config/html_theme_options` of the `_config.yml` file to point to your cookbook's GitHub repository within the [ProjectPythia](https://github.com/ProjectPythia) organization
-   1. Make sure the workflow settings under Settings-->Actions-->General are set to allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"> (Please reach out if you are not able to access the Settings for your repository by tagging @ProjectPythia/core)
-
+   1. [Contact Project Pythia via the Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/60) (or otherwise) to let us know about your cookbook
+   1. Someone from the Pythia team will add you as a member of the ProjectPythia organization
+   1. Once you have accepted the invitation, navigate to the settings of your cookbook repository, scroll down to the Danger Zone, and click "Transfer"
+   1. Select or type "ProjectPythia", confirm, and transfer
+   1. Replace the `repository_url` in the `sphinx/config/html_theme_options` of the `_config.yml` file to point to your cookbook's new GitHub repository within the [ProjectPythia](https://github.com/ProjectPythia) organization
+   1. Make sure the workflow settings under Settings&rarr;Actions&rarr;General are set to allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"> (Please reach out if you are not able to access the Settings for your repository by tagging @ProjectPythia/core)
    1. Open issues, PRs, and continue making edits as necessary
-
-1. Add your Cookbook to the Cookbook gallery!
+1. Add your cookbook to the Cookbooks Gallery!
    1. Navigate to the [Cookbooks Gallery](https://cookbooks.projectpythia.org/)
    1. Click the "Submit a New Cookbook" button, which will redirect you to a [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook)
    1. Add the root name of your cookbook repository in the relevant field and any other information you'd like the team to know
