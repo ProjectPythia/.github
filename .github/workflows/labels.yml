@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '0 12 * * MON'
 
 jobs:
   sync-labels:
