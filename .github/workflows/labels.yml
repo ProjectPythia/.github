@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '0 12 * * MON'
 
 jobs:
   sync-labels:
@@ -22,7 +22,7 @@ jobs:
           - ProjectPythia/pythia-datasets
           - ProjectPythia/sphinx-pythia-theme
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: micnncim/action-label-syncer@v1
         with:
           manifest: .github/labels.yml
