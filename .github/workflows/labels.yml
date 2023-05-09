@@ -21,6 +21,7 @@ jobs:
           - ProjectPythia/pythia-foundations
           - ProjectPythia/pythia-datasets
           - ProjectPythia/sphinx-pythia-theme
+          - ProjectPythia/cmip6-cookbook
     steps:
       - uses: actions/checkout@v3
       - uses: micnncim/action-label-syncer@v1
