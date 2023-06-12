@@ -13,9 +13,11 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
 
 ## Data access
 
-Whenever possible, we encourage the use of freely accessible data such as the [CESM LENS data on AWS](https://registry.opendata.aws/ncar-cesm-lens/)
-or the [CMIP6 data on GCS](https://console.cloud.google.com/marketplace/details/noaa-public/cmip6) to demonstrate your workflows.
-Otherwise, local data can be added to your Cookbook, provided it is not too large (< 50 MB). You may need to use a subset of your data.
+Before developing your cookbook, you should consider how it will access the data you plan to use. In loose order of preference, we recommend the following:
+1. Rely on data that is already freely available and accessible with tools in the ecosystem. Point to Foundations or other cookbooks for tool how-to guides if needed. Examples include the [CMIP6 Cookbook](https://projectpythia.org/cmip6-cookbook/) and the [CESM LENS on AWS Cookbook](https://projectpythia.org/cesm-lens-aws-cookbook/)
+1. Focus on representative subsets of data that can be packaged alongside the cookbook in-repo. An example is the [Landsat ML Cookbook](https://projectpythia.org/landsat-ml-cookbook/README.html)
+1. Wait for the Pythia team to explore cloud storage support via NSF JetStream or adjacent efforts
+1. Provide the tools and/or clear documentation for accessing the data that you have stored somewhere else
 
 ## Use the template
 
