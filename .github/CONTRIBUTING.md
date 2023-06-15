@@ -53,7 +53,7 @@ Once you have a set of notebooks that you are ready to share, there are various 
   - [ ] description
   - [ ] thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
   - [ ] tags
-- [ ] Under the `execute` section of `_config.yml`, change `execute_notebooks` from `cache` to either `binder` to run on the Pythia Binder or `force` to run with GitHub Actions. Cookbooks that are expected to use a lot of resources should use the Pythia Binder
+- [ ] If your cookbook requires more computing resources than available through GitHub Actions, change `execute_notebooks` from `cache` to `binder` in `_config.yml` to run your cookbook on the Pythia Binder
 - [ ] Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks
 - [ ] Ensure that your cookbook successfully builds and shows the executed code
 
