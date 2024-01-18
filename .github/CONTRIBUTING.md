@@ -17,6 +17,7 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
    1. Choose "Include all branches"
    1. Create the repo under your account with a descriptive name, followed by `-cookbook` (e.g. `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`, etc.) by entering a name into the "Repository name" field and clicking on "Create repository from template"
    1. Your browser should be directed to the newly created repository under your GitHub account. Under Settings, enable GitHub Pages by changing the Source from "None" to `gh-pages` and clicking on "Save"
+   1. Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
    1. [Clone the repo](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) in your local workspace and `cd` into your cookbook directory
 1. Create the environment
    1. Within `environment.yml`, change `name:` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes
@@ -29,7 +30,9 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
    1. Replace the `thumbnail.svg` with a thumbnail image relevant to your cookbook
    1. Change `README.md` to include your cookbook title, a sentence or two describing the cookbook, and if desired embed your thumbnail image. See the [Radar Cookbook](https://github.com/ProjectPythia/radar-cookbook/blob/main/README.md) for an example
    1. In the badge links in `README.md`, change `cookbook-template` to your cookbook repo name
-   1. Replace the `title`, `author`, `description`, `thumbnail`, and the domain and package `tags` fields in the `_config.yml` file with values relevant to your cookbook. These values will affect how information about your cookbook is displayed in the gallery.
+   1. Replace the package `tags` fields in the `_config.yml` file with values relevant to your cookbook. These will be used to determine what filters will display your Cookbook.
+   1. Edit the `CITATION.cff` file with your authors’ names, and optionally ORCID’s affiliations, and websites (pointing to GitHub accounts or other). Change the name of your Cookbook contributors, title, and add a brief abstract. These values will affect how information about your cookbook is displayed in the gallery and be used in the Zenodo citation of your Cookbook.
+   1. Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
    1. Commit your changes with git, and [open a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html) on your cookbook repo. When you open a PR there, the github-actions bot will comment a link to a preview of your cookbook
 1. Transfer cookbook to the [ProjectPythia](https://github.com/ProjectPythia) organization
    1. [Contact Project Pythia via the Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/60) (or otherwise) to let us know about your cookbook
@@ -39,6 +42,9 @@ Before you begin, ask yourself if the content you are developing for a cookbook 
    1. Replace the `repository_url` in the `sphinx/config/html_theme_options` of the `_config.yml` file to point to your cookbook's new GitHub repository within the [ProjectPythia](https://github.com/ProjectPythia) organization
    1. Make sure the workflow settings under Settings&rarr;Actions&rarr;General are set to allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"> (Please reach out if you are not able to access the Settings for your repository by tagging @ProjectPythia/core)
    1. Open issues, PRs, and continue making edits as necessary
+1. Make a Zenodo release of your Cookbook
+   1. On Zenodo toggle on your repository by going to GitHub and then finding your repository. Let a Project Pythia teammember know if you cannot do this.
+   1. On GitHub make a new release! This is on the right nav side of the page from your code-view in the repository. Again ask for help if needed. Note Zenodo badge links will fail until you have made a release.
 1. Add your cookbook to the Cookbooks Gallery!
    1. Navigate to the [Cookbooks Gallery](https://cookbooks.projectpythia.org/)
    1. Click the "Submit a New Cookbook" button, which will redirect you to a [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook)
