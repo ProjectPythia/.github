@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '0 12 * * MON'
 
 jobs:
   sync-labels:
@@ -21,8 +21,28 @@ jobs:
           - ProjectPythia/pythia-foundations
           - ProjectPythia/pythia-datasets
           - ProjectPythia/sphinx-pythia-theme
+          - ProjectPythia/cmip6-cookbook
+          - ProjectPythia/cookbook-template
+          - ProjectPythia/HRRR-AWS-cookbook
+          - ProjectPythia/dask-cookbook
+          - ProjectPythia/landsat-ml-cookbook
+          - ProjectPythia/cookbook-actions
+          - ProjectPythia/cookbook-gallery
+          - ProjectPythia/github-sandbox
+          - ProjectPythia/pythia-cookoff-2023
+          - ProjectPythia/metpy-cookbook
+          - ProjectPythia/gridding-cookbook
+          - ProjectPythia/cesm-lens-aws-cookbook
+          - ProjectPythia/radar-cookbook
+          - ProjectPythia/xbatcher-ML-1-cookbook
+          - ProjectPythia/kerchunk-cookbook
+          - ProjectPythia/packaging-cookbook
+          - ProjectPythia/librarynb
+          - ProjectPythia/physical-oceanography-cookbook
+          - ProjectPythia/intake-cookbook
+          - ProjectPythia/xgcm-cookbook
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: micnncim/action-label-syncer@v1
         with:
           manifest: .github/labels.yml
