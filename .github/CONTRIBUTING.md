@@ -40,12 +40,13 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
 1. In `.github/workflows/nightly-build.yaml`, `.github/workflows/publish-book.yaml`, and `.github/workflows/trigger-book-build.yaml`, change the `environment_name` to the name of your environment (ex. `cesm-cookbook-dev`)
 
 # Update repository-specific text
+
 - [ ] Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
 - [ ] Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
   - [ ] title
   - [ ] thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
   - [ ] tags
-- [ ] Edit the `CITATION.cff` file  Change the name of your Cookbook contributors, title These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
+- [ ] Edit the `CITATION.cff` file Change the name of your Cookbook contributors, title These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
   - [ ] title
   - [ ] authors
   - [ ] authors' ORCID IDs and affiliation websites (optional)
@@ -77,9 +78,9 @@ You will automatically retain write access to your cookbook, but if you would li
 You can open issues, PRs, and continue making edits as necessary.
 
 ## Make a Zenodo release of your Cookbook
-   1. On Zenodo toggle on your repository by going to GitHub and then finding your repository. Let a Project Pythia teammember know if you cannot do this.
-   1. On GitHub make a new release! This is on the right nav side of the page from your code-view in the repository. Again ask for help if needed. Note Zenodo badge links will fail until you have made a release.
 
+1.  On Zenodo toggle on your repository by going to GitHub and then finding your repository. Let a Project Pythia teammember know if you cannot do this.
+1.  On GitHub make a new release! This is on the right nav side of the page from your code-view in the repository. Again ask for help if needed. Note Zenodo badge links will fail until you have made a release.
 
 ## Add your cookbook to the Cookbooks Gallery!
 
