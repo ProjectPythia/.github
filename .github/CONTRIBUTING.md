@@ -31,14 +31,6 @@ Before developing your cookbook, you should consider how it will access the data
 
 Your cookbook is now ready to have content added. In the rest of this guide, we will mostly assume that you are familiar with git/GitHub. If not, we recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
-## Set up the environment
-
-1. [Clone the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) in your local workspace
-1. Within `environment.yml`, change `name` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes
-1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
-1. Activate your environment with `conda activate <env-name>`
-1. In `.github/workflows/nightly-build.yaml`, `.github/workflows/publish-book.yaml`, and `.github/workflows/trigger-book-build.yaml`, change the `environment_name` to the name of your environment (ex. `cesm-cookbook-dev`)
-
 # Update repository-specific text
 
 - [ ] Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
@@ -53,6 +45,14 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
   - [ ] description/abstract
   - [ ] Cookbook contributor name
 - [ ] Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
+
+## Set up the environment
+
+1. [Clone the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) in your local workspace
+1. Within `environment.yml`, change `name` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes
+1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
+1. Activate your environment with `conda activate <env-name>`
+1. In `.github/workflows/nightly-build.yaml`, `.github/workflows/publish-book.yaml`, and `.github/workflows/trigger-book-build.yaml`, change the `environment_name` to the name of your environment (ex. `cesm-cookbook-dev`)
 
 ## Develop your cookbook
 
