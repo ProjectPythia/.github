@@ -31,7 +31,7 @@ Before developing your cookbook, you should consider how it will access the data
 
 Your cookbook is now ready to have content added. In the rest of this guide, we will mostly assume that you are familiar with git/GitHub. If not, we recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
-# Update repository-specific text
+## Update repository-specific text
 
 - [ ] Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
 - [ ] Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
