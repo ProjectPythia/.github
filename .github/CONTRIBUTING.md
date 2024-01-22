@@ -31,6 +31,21 @@ Before developing your cookbook, you should consider how it will access the data
 
 Your cookbook is now ready to have content added. In the rest of this guide, we will mostly assume that you are familiar with git/GitHub. If not, we recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
+## Update repository-specific text
+
+- [ ] Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
+- [ ] Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
+  - [ ] title
+  - [ ] thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
+  - [ ] tags
+- [ ] Edit the `CITATION.cff` file Change the following fields. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
+  - [ ] title
+  - [ ] authors
+  - [ ] authors' ORCID IDs and affiliation websites (optional)
+  - [ ] description/abstract
+  - [ ] Cookbook contributor name
+- [ ] Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
+
 ## Set up the environment
 
 1. [Clone the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) in your local workspace
@@ -38,6 +53,7 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
 1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
 1. Activate your environment with `conda activate <env-name>`
 1. In `.github/workflows/nightly-build.yaml`, `.github/workflows/publish-book.yaml`, and `.github/workflows/trigger-book-build.yaml`, change the `environment_name` to the name of your environment (ex. `cesm-cookbook-dev`)
+1. If when building your Cookbook in GitHub actions, you get the error, "Exemption Occured: jupyter_client.kernelspec.NoSuchKernel: No such kernel named <environment name>", that means there is an error in your `kernelspec` metadata. You can fix this in the command line with [`nb-clean`](https://github.com/srstevenson/nb-clean).
 
 ## Develop your cookbook
 
@@ -46,13 +62,6 @@ Once you have a set of notebooks that you are ready to share, there are various 
 
 - [ ] Add the notebooks to `_toc.yml` (the table of contents). See [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for syntax
 - [ ] Edit `README.md` as described in that file. This is the homepage of your cookbook, so it should be descriptive
-- [ ] In the badge links in `README.md`, change `cookbook-template` to your cookbook repo name
-- [ ] Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/)
-  - [ ] title
-  - [ ] author
-  - [ ] description
-  - [ ] thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
-  - [ ] tags
 - [ ] If your cookbook requires more computing resources than available through GitHub Actions, change `execute_notebooks` from `cache` to `binder` in `_config.yml` to run your cookbook on the Pythia Binder
 - [ ] Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks
 - [ ] Ensure that your cookbook successfully builds and shows the executed code
@@ -68,6 +77,11 @@ Once you have a set of notebooks that you are ready to share, there are various 
 You will automatically retain write access to your cookbook, but if you would like to add outside collaborators to the repository, contact a member of the Pythia team to be given the Admin role on your cookbook repository.
 
 You can open issues, PRs, and continue making edits as necessary.
+
+## Make a Zenodo release of your Cookbook
+
+1.  On Zenodo toggle on your repository by going to GitHub and then finding your repository. Let a Project Pythia teammember know if you cannot do this.
+1.  On GitHub make a new release! This is on the right nav side of the page from your code-view in the repository. Again ask for help if needed. Note Zenodo badge links will fail until you have made a release.
 
 ## Add your cookbook to the Cookbooks Gallery!
 
