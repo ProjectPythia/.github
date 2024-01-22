@@ -38,7 +38,7 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
   - [ ] title
   - [ ] thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
   - [ ] tags
-- [ ] Edit the `CITATION.cff` file Change the name of your Cookbook contributors, title These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
+- [ ] Edit the `CITATION.cff` file Change the following fields. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
   - [ ] title
   - [ ] authors
   - [ ] authors' ORCID IDs and affiliation websites (optional)
