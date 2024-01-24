@@ -53,7 +53,7 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
 1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
 1. Activate your environment with `conda activate <env-name>`
 1. In `.github/workflows/nightly-build.yaml`, `.github/workflows/publish-book.yaml`, and `.github/workflows/trigger-book-build.yaml`, change the `environment_name` to the name of your environment (ex. `cesm-cookbook-dev`)
-1. If when building your Cookbook in GitHub actions, you get the error, "Exemption Occured: jupyter_client.kernelspec.NoSuchKernel: No such kernel named <environment name>", that means there is an error in your `kernelspec` metadata. You can fix this in the command line with [`nb-clean`](https://github.com/srstevenson/nb-clean).
+1. If when building your Cookbook in GitHub actions, you get the error, "Exemption Occured: jupyter_client.kernelspec.NoSuchKernel: No such kernel named <environment name>", that means there is an error in your `kernelspec` metadata. You can fix this in the command line by entering in the command line `jupyter nbconvert --to notebook --inplace --Exporter.preprocessors='["nbconvert.preprocessors.ClearMetadataPreprocessor", "nbconvert.preprocessors.ClearOutputPreprocessor"]' notebooks/*.ipynb`
 
 ## Develop your cookbook
 
